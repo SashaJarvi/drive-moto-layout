@@ -122,13 +122,13 @@
         <button>еще</button>
       </div>
       <div class="catalog__filter-btn">
-        <select class="filter-style" name="" id="">
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
+        <select class="filter-style select-item">
+          <option value="1">По полулярности</option>
+          <option value="2">По полулярности</option>
+          <option value="3">По полулярности</option>
         </select>
 
-        <button class="catalog__filter-btngrid">
+        <button class="catalog__filter-button catalog__filter-button--active catalog__filter-btngrid">
           <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2"/>
             <rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"/>
@@ -138,7 +138,7 @@
           </svg>
         </button>
 
-        <button class="catalog__filter-btnline">
+        <button class="catalog__filter-button catalog__filter-btnlist">
           <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="1">
               <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035"/>
@@ -156,12 +156,12 @@
     <div class="catalog__inner">
       <aside class="catalog__inner-aside aside-filter">
         <div class="tabs aside-filter__tabs">
-          <a class="tab aside-filter__tab tab--active" href="#"><span>Параметры</span></a>
-          <a class="tab aside-filter__tab" href="#"><span>по марке</span></a>
+          <a class="tab aside-filter__tab tab--active" href="#parameters"><span>Параметры</span></a>
+          <a class="tab aside-filter__tab" href="#by-brand"><span>по марке</span></a>
         </div>
 
         <div class="tabs-container">
-          <div class="tabs-content tabs-content--active aside-filter__tabs-content">
+          <div id="parameters" class="tabs-content tabs-content--active aside-filter__tabs-content">
             <form class="aside-filter__form" action="">
               <ul class="aside-filter__list">
                 <li class="aside-filter__item-drop">
@@ -410,7 +410,7 @@
             </form>
           </div>
 
-          <div class="tabs-content aside-filter__tabs-content">content 2</div>
+          <div id="by-brand" class="tabs-content aside-filter__tabs-content">content 2</div>
         </div>
       </aside>
 
@@ -790,11 +790,3 @@
 <script src="js/main.js"></script>
 </body>
 </html>
-
-<!--<div class="tabs">-->
-<!--  <a class="tab tab&#45;&#45;active" href="#"></a>-->
-<!--</div>-->
-
-<!--<div class="tabs-container">-->
-<!--  <div class="tabs-content"></div>-->
-<!--</div>-->
