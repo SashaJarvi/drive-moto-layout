@@ -57,6 +57,10 @@ body {
     font-weight: 700;
 }
 
+.menu__btn {
+    display: none;
+}
+
 .menu__item {
     display: inline-block;
 }
@@ -117,6 +121,10 @@ body {
     font-size: 10px;
     font-weight: 500;
     line-height: 20px;
+}
+
+.menu-mobile {
+    display: none;
 }
 
 .header__bottom {
@@ -1605,7 +1613,6 @@ body {
     opacity: 0.6;
 }
 
-
 .product-card__tab + .product-card__tab {
     padding-left: 17px;
 }
@@ -1615,7 +1622,6 @@ body {
     font-weight: bold;
 
     border-bottom: 2px solid #1c62cd;
-
     opacity: 1;
 }
 
@@ -1664,6 +1670,131 @@ body {
 
     background: #1c62cd;
     border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.card-tabs__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 22px 0;
+    margin-bottom: 50px;
+
+    background: #f0f0f4;
+}
+
+.card-tabs__tab {
+    font-size: 20px;
+    line-height: 24px;
+
+    opacity: 0.6;
+}
+
+.card-tabs__tab.tab--active {
+    border-bottom: 1px solid #1c62cd;
+    opacity: 1;
+}
+
+.tabs-form {
+    margin-bottom: 100px;
+}
+
+.tabs-form__top-line {
+    margin-bottom: 50px;
+}
+
+.tabs-form__label-search {
+    color: rgba(47, 48, 53, 0.7);
+
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.tabs-form__input-search {
+    margin-left: 17px;
+    margin-right: 155px;
+
+    padding: 9px 37px 9px 17px;
+
+    background: #f0f0f4;
+    border: none;
+    border-radius: 3px;
+}
+
+.tabs-form__label-pickup {
+    margin-right: 54px;
+
+    color: rgba(47, 48, 53, 0.7);
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.tabs-form__list-item {
+    display: flex;
+
+    padding: 20px 0;
+
+    color: rgba(47, 48, 53, 0.7);
+    font-size: 16px;
+    line-height: 22px;
+
+    border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+}
+
+.tabs-form__list-item.tabs-form__list-item--title {
+    color: #2f3035;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.tabs-form__list-address {
+    width: 220px;
+    margin-right: 80px;
+}
+
+.tabs-form__list-work-hours {
+    width: 157px;
+    margin-right: 96px;
+}
+
+.work-hours__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-form__list-work-hours span {
+    display: block;
+}
+
+.tabs-form__list-available {
+    width: 140px;
+    margin-right: 60px;
+}
+
+.tabs-form__list-num {
+    width: 104px;
+}
+
+.tabs-form__list-btn {
+    margin-left: auto;
+}
+
+.tabs-form__list-btn button {
+    padding: 9px 40px;
+
+    color: #fff;
+
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    background: #1c62cd;
+    border: none;
+    border-radius: 3px;
     outline: none;
 
     cursor: pointer;
