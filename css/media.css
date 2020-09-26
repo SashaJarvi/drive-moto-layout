@@ -10,6 +10,7 @@
 
 @media (max-width: 968px) {
     .menu__btn {
+        padding: 0;
         display: block;
 
         background-color: transparent;
@@ -33,6 +34,29 @@
         display: none;
     }
 
+    .list-mobile {
+        display: block;
+
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+
+        background: #f0f0f4;
+
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    .list-mobile__items {
+        min-width: 394px;
+        padding: 15px 10px;
+    }
+
+    /*.list-mobile .menu__item {*/
+    /*    white-space: nowrap;*/
+    /*}*/
+
     .header__bottom {
         display: none;
     }
@@ -43,7 +67,5 @@
         display: none;
     }
 
-    .menu-mobile {
-        display: block;
-    }
+
 }

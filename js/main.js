@@ -100,4 +100,13 @@ $(function () {
     normalFill: '#c4c4c4',
     ratedFill: '#1c62cd'
   })
+  
+  //
+  const menuBtn = $('.menu__btn'),
+    menuMobile = $('.menu-mobile'),
+    menuMobileActiveClass = 'menu-mobile--show';
+  
+  menuBtn.on('click', function () {
+    menuMobile.toggleClass(menuMobileActiveClass);
+  })
 })

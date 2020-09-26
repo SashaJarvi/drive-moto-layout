@@ -32,12 +32,16 @@ p {
 }
 
 body {
+    min-width: 320px;
+
     color: #2f3035;
 
     font-family: "SFProDisplay-Regular", sans-serif;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
+
+    overflow-x: hidden;
 }
 
 .container {
@@ -124,6 +128,43 @@ body {
 }
 
 .menu-mobile {
+    position: absolute;
+
+    width: 243px;
+
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    transform: translateX(-100%);
+    transition: all .3s;
+
+    z-index: 2;
+}
+
+.menu-mobile.menu-mobile--show {
+    transform: translateX(0);
+}
+
+.menu-mobile__item {
+    position: relative;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile__link {
+    display: block;
+
+    padding-top: 46px;
+    padding-left: 53px;
+}
+
+.menu-mobile__img {
+    position: absolute;
+    left: 11px;
+    bottom: 0;
+}
+
+.list-mobile {
     display: none;
 }
 
