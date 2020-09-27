@@ -224,7 +224,7 @@ body {
 }
 
 .banner-section__slider-img {
-    height: 400px;
+    min-height: 400px;
 
     object-fit: cover;
 }

@@ -11,6 +11,14 @@ $(function () {
       `<button class="banner-section__slider-btn banner-section__slider-btn--next">
         <img src="./images/arrow-right.svg" alt="">
       </button>`,
+    responsive: [
+      {
+        breakpoint: 968,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
   //
