@@ -286,6 +286,10 @@ body {
     font-size: 0;
 }
 
+.slick-dots .slick-active button {
+    background: #fff;
+}
+
 .slick-dots li:focus,
 .slick-dots button:focus {
     outline: none;
@@ -569,6 +573,18 @@ body {
 
 .products__tab + .products__tab {
     margin-left: 50px;
+}
+
+.product-slider .slick-dots {
+    bottom: -30px;
+}
+
+.product-slider .slick-dots button {
+    background: #c4c4c4;
+}
+
+.product-slider .slick-dots .slick-active button {
+    background: #1c62cd;
 }
 
 .product-slider__slider-btn--prev {

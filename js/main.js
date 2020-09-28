@@ -62,6 +62,39 @@ $(function () {
       `<button class="product-slider__slider-btn product-slider__slider-btn--next">
         <img src="./images/arrow-right-black.svg" alt="">
        </button>`,
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 871,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
   });
 
   //
@@ -116,5 +149,13 @@ $(function () {
   
   menuBtn.on('click', function () {
     menuMobile.toggleClass(menuMobileActiveClass);
+  })
+
+  //
+  const footerTopTitleToggler = $('.footer__top-title--toggler');
+  
+  footerTopTitleToggler.on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('active');
   })
 })
