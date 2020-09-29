@@ -158,4 +158,11 @@ $(function () {
     $(this).next().slideToggle();
     $(this).toggleClass('active');
   })
+
+  //
+  const asideBtn = $('.btn-aside');
+
+  asideBtn.on('click', function () {
+    $(this).next().slideToggle();
+  })
 })

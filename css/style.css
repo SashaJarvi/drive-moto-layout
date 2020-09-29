@@ -977,12 +977,12 @@ body {
     cursor: pointer;
 }
 
-.catalog__filter-btn {
+.catalog__filter-buttons {
     display: flex;
     align-items: center;
 }
 
-.catalog__filter-btn button {
+.catalog__filter-buttons button {
     margin: 0;
     padding: 0;
 
@@ -993,7 +993,7 @@ body {
     cursor: pointer;
 }
 
-.catalog__filter-btn button + button {
+.catalog__filter-buttons button + button {
     margin-left: 10px;
 }
 
@@ -1029,6 +1029,10 @@ body {
 
 .catalog__inner {
     display: flex;
+}
+
+.btn-aside {
+    display: none;
 }
 
 .catalog__inner-aside {
