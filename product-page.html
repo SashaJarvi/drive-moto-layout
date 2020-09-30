@@ -24,6 +24,12 @@
     <div class="container">
       <div class="header__top-inner">
         <nav class="menu">
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+          </button>
+
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">Магазины</a>
@@ -36,11 +42,11 @@
             </li>
           </ul>
         </nav>
-  
+
         <a class="logo" href="">
           <img class="logo__img" src="images/logo.svg" alt="">
         </a>
-        
+
         <div class="header__box">
           <p class="header__address">Москва,  ул. Науки  25</p>
           <ul class="user-list">
@@ -65,7 +71,120 @@
       </div>
     </div>
   </div>
-  
+
+  <ul class="menu-mobile">
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <img class="menu-mobile__img" src="images/user.svg" alt="">
+        <p>Войти</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <img class="menu-mobile__img" src="images/user.svg" alt="">
+        <p>Регистрация</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <img class="menu-mobile__img" src="images/heart.svg" alt="">
+        <p>Избранное</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <img class="menu-mobile__img" src="images/basket.svg" alt="">
+        <p>Корзина</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <img class="menu-mobile__img" src="images/house.svg" alt="">
+        <p>Магазины</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <img class="menu-mobile__img" src="images/percent.svg" alt="">
+        <p>Акции</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <img class="menu-mobile__img" src="images/box.svg" alt="">
+        <p>Доставка и оплата</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <p>Квадроциклы</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <p>Катера</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <p>Гидроциклы</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <p>Лодки</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <p>Вездеходы</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <p>Снегоходы</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <p>Двигатели</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a href="#" class="menu-mobile__link">
+        <p>Запчасти</p>
+      </a>
+    </li>
+  </ul>
+
+  <div class="list-mobile">
+    <ul class="list-mobile__items">
+      <li class="menu__item">
+        <a class="menu__link" href="#">Магазины</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Акции</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Доставка и оплата</a>
+      </li>
+    </ul>
+  </div>
+
   <div class="header__bottom">
     <div class="container">
       <ul class="menu-categories">
@@ -124,6 +243,10 @@
         <p class="product-card__price-new">1 100 475 ₽</p>
 
         <a href="" class="product-card__link">Нашли дешевле? Снизим цену!</a>
+
+        <div class="product-card__btn product-card__btn--mobile">
+          <button class="product-card__btn-item">Купить</button>
+        </div>
       </div>
 
       <div class="product-card__content">
@@ -201,7 +324,7 @@
 <section class="card-tabs">
   <div class="container">
     <div class="tabs-wrapper">
-      <div class="tabs card-tabs__box">
+      <div class="tabs card-tabs__box mobile-overflow">
         <a class="card-tabs__tab tab" href="#product-card-tab-1">О товаре</a>
         <a class="card-tabs__tab tab" href="#product-card-tab-2">Характеристики</a>
         <a class="card-tabs__tab tab" href="#product-card-tab-3">Отзывы</a>
@@ -210,108 +333,108 @@
         <a class="card-tabs__tab tab" href="#product-card-tab-6">Сервис</a>
         <a class="card-tabs__tab tab" href="#product-card-tab-7">Гарантия</a>
       </div>
+    </div>
 
-      <div class="tabs-container">
-        <div id="product-card-tab-1" class="card-tabs__tab-content tabs-content">content 1</div>
-        <div id="product-card-tab-2" class="card-tabs__tab-content tabs-content">content 2</div>
-        <div id="product-card-tab-3" class="card-tabs__tab-content tabs-content">content 3</div>
-        <div id="product-card-tab-4" class="card-tabs__tab-content tabs-content tabs-content--active">
-          <form class="tabs-form" action="">
-            <div class="tabs-form__top-line">
-              <label class="tabs-form__label-search">
-                Магазин
-                <input class="tabs-form__input-search" type="text">
-              </label>
+    <div class="tabs-container">
+      <div id="product-card-tab-1" class="card-tabs__tab-content tabs-content">content 1</div>
+      <div id="product-card-tab-2" class="card-tabs__tab-content tabs-content">content 2</div>
+      <div id="product-card-tab-3" class="card-tabs__tab-content tabs-content">content 3</div>
+      <div id="product-card-tab-4" class="card-tabs__tab-content tabs-content tabs-content--active">
+        <form class="tabs-form" action="">
+          <div class="tabs-form__top-line">
+            <label class="tabs-form__label-search">
+              Магазин
+              <input class="tabs-form__input-search" type="text">
+            </label>
 
-              <label class="tabs-form__label-pickup">
-                <input class="filter-style" type="radio" name="pickup">
-                Забрать сегодня
-              </label>
-              <label class="tabs-form__label-pickup">
-                <input class="filter-style" type="radio" name="pickup" checked>
-                Забрать в течение недели
-              </label>
-            </div>
+            <label class="tabs-form__label-pickup">
+              <input class="filter-style" type="radio" name="pickup">
+              Забрать сегодня
+            </label>
+            <label class="tabs-form__label-pickup">
+              <input class="filter-style" type="radio" name="pickup" checked>
+              Забрать в течение недели
+            </label>
+          </div>
 
-            <ul class="tabs-form__list">
-              <li class="tabs-form__list-item tabs-form__list-item--title">
-                <div class="tabs-form__list-address">Адрес</div>
-                <div class="tabs-form__list-work-hours">Режим работы</div>
-                <div class="tabs-form__list-available">Доступно</div>
-                <div class="tabs-form__list-num">Количество</div>
-                <div class="tabs-form__list-btn"></div>
-              </li>
-              <li class="tabs-form__list-item">
-                <div class="tabs-form__list-address">Москва, ул. Науки 25</div>
-                <div class="tabs-form__list-work-hours work-hours">
-                  <div class="work-hours__item">
-                    <span>пн-сб:</span> <span>08:00-19:00</span>
-                  </div>
-                  <div class="work-hours__item">
-                    <span>вс:</span> <span>09:00-17:00</span>
-                  </div>
+          <ul class="tabs-form__list">
+            <li class="tabs-form__list-item tabs-form__list-item--title">
+              <div class="tabs-form__list-address">Адрес</div>
+              <div class="tabs-form__list-work-hours">Режим работы</div>
+              <div class="tabs-form__list-available">Доступно</div>
+              <div class="tabs-form__list-num">Количество</div>
+              <div class="tabs-form__list-btn"></div>
+            </li>
+            <li class="tabs-form__list-item">
+              <div class="tabs-form__list-address">Москва, ул. Науки 25</div>
+              <div class="tabs-form__list-work-hours work-hours">
+                <div class="work-hours__item">
+                  <span>пн-сб:</span> <span>08:00-19:00</span>
                 </div>
-                <div class="tabs-form__list-available">В наличии</div>
-                <div class="tabs-form__list-num">1</div>
-                <div class="tabs-form__list-btn">
-                  <button type="submit">Купить</button>
+                <div class="work-hours__item">
+                  <span>вс:</span> <span>09:00-17:00</span>
                 </div>
-              </li>
-              <li class="tabs-form__list-item">
-                <div class="tabs-form__list-address">Москва, ул.  Южная 134</div>
-                <div class="tabs-form__list-work-hours">
-                  <div class="work-hours__item">
-                    <span>пн-сб:</span> <span>08:00-19:00</span>
-                  </div>
-                  <div class="work-hours__item">
-                    <span>вс:</span> <span>09:00-17:00</span>
-                  </div>
+              </div>
+              <div class="tabs-form__list-available">В наличии</div>
+              <div class="tabs-form__list-num">1</div>
+              <div class="tabs-form__list-btn">
+                <button type="submit">Купить</button>
+              </div>
+            </li>
+            <li class="tabs-form__list-item">
+              <div class="tabs-form__list-address">Москва, ул. Южная 134</div>
+              <div class="tabs-form__list-work-hours">
+                <div class="work-hours__item">
+                  <span>пн-сб:</span> <span>08:00-19:00</span>
                 </div>
-                <div class="tabs-form__list-available">В наличии</div>
-                <div class="tabs-form__list-num">2</div>
-                <div class="tabs-form__list-btn">
-                  <button type="submit">Купить</button>
+                <div class="work-hours__item">
+                  <span>вс:</span> <span>09:00-17:00</span>
                 </div>
-              </li>
-              <li class="tabs-form__list-item">
-                <div class="tabs-form__list-address">Санкт-Петербург,<br>ул. Красная 19</div>
-                <div class="tabs-form__list-work-hours">
-                  <div class="work-hours__item">
-                    <span>пн-сб:</span> <span>08:00-19:00</span>
-                  </div>
-                  <div class="work-hours__item">
-                    <span>вс:</span> <span>09:00-17:00</span>
-                  </div>
+              </div>
+              <div class="tabs-form__list-available">В наличии</div>
+              <div class="tabs-form__list-num">2</div>
+              <div class="tabs-form__list-btn">
+                <button type="submit">Купить</button>
+              </div>
+            </li>
+            <li class="tabs-form__list-item">
+              <div class="tabs-form__list-address">Санкт-Петербург,<br>ул. Красная 19</div>
+              <div class="tabs-form__list-work-hours">
+                <div class="work-hours__item">
+                  <span>пн-сб:</span> <span>08:00-19:00</span>
                 </div>
-                <div class="tabs-form__list-available">Нет в наличии</div>
-                <div class="tabs-form__list-num">0</div>
-                <div class="tabs-form__list-btn">
-                  <button type="submit">Купить</button>
+                <div class="work-hours__item">
+                  <span>вс:</span> <span>09:00-17:00</span>
                 </div>
-              </li>
-              <li class="tabs-form__list-item">
-                <div class="tabs-form__list-address">Киев, ул Шевченко 167</div>
-                <div class="tabs-form__list-work-hours">
-                  <div class="work-hours__item">
-                    <span>пн-сб:</span> <span>08:00-19:00</span>
-                  </div>
-                  <div class="work-hours__item">
-                    <span>вс:</span> <span>09:00-17:00</span>
-                  </div>
+              </div>
+              <div class="tabs-form__list-available">Нет в наличии</div>
+              <div class="tabs-form__list-num">0</div>
+              <div class="tabs-form__list-btn">
+                <button type="submit">Купить</button>
+              </div>
+            </li>
+            <li class="tabs-form__list-item">
+              <div class="tabs-form__list-address">Киев, ул Шевченко 167</div>
+              <div class="tabs-form__list-work-hours">
+                <div class="work-hours__item">
+                  <span>пн-сб:</span> <span>08:00-19:00</span>
                 </div>
-                <div class="tabs-form__list-available">Нет в наличии</div>
-                <div class="tabs-form__list-num">0</div>
-                <div class="tabs-form__list-btn">
-                  <button type="submit">Купить</button>
+                <div class="work-hours__item">
+                  <span>вс:</span> <span>09:00-17:00</span>
                 </div>
-              </li>
-            </ul>
-          </form>
-        </div>
-        <div id="product-card-tab-5" class="card-tabs__tab-content tabs-content">content 5</div>
-        <div id="product-card-tab-6" class="card-tabs__tab-content tabs-content">content 6</div>
-        <div id="product-card-tab-7" class="card-tabs__tab-content tabs-content">content 7</div>
+              </div>
+              <div class="tabs-form__list-available">Нет в наличии</div>
+              <div class="tabs-form__list-num">0</div>
+              <div class="tabs-form__list-btn">
+                <button type="submit">Купить</button>
+              </div>
+            </li>
+          </ul>
+        </form>
       </div>
+      <div id="product-card-tab-5" class="card-tabs__tab-content tabs-content">content 5</div>
+      <div id="product-card-tab-6" class="card-tabs__tab-content tabs-content">content 6</div>
+      <div id="product-card-tab-7" class="card-tabs__tab-content tabs-content">content 7</div>
     </div>
   </div>
 </section>
@@ -319,19 +442,21 @@
 <section class="products">
   <div class="container">
     <div class="products__inner">
-      <h3 class="products__title">С этими товарами покупают</h3>
+      <h3 class="products__title">С этим товаром покупают</h3>
 
-      <div class="tabs products__tabs">
-        <a class="tab tab--active products__tab" href="#popular-tab-1">запчасти</a>
-        <a class="tab products__tab" href="#popular-tab-2">моторы</a>
-        <a class="tab products__tab" href="#popular-tab-3">шины</a>
-        <a class="tab products__tab" href="#popular-tab-4">электроника</a>
-        <a class="tab products__tab" href="#popular-tab-5">инструменты</a>
-        <a class="tab products__tab" href="#popular-tab-6">аксессуары</a>
+      <div class="tabs-wrapper">
+        <div class="tabs products__tabs mobile-overflow">
+          <a class="tab tab--active products__tab" href="#product-tab-1">запчасти</a>
+          <a class="tab products__tab" href="#product-tab-2">моторы</a>
+          <a class="tab products__tab" href="#product-tab-3">шины</a>
+          <a class="tab products__tab" href="#product-tab-4">электроника</a>
+          <a class="tab products__tab" href="#product-tab-5">инструменты</a>
+          <a class="tab products__tab" href="#product-tab-6">аксессуары</a>
+        </div>
       </div>
 
       <div class="tabs-container products__container">
-        <div id="popular-tab-1" class="tabs-content tabs-content--active products__content">
+        <div id="product-tab-1" class="tabs-content tabs-content--active products__content">
           <div class="product-slider">
             <div class="product-slider__item">
               <div class="product-item__wrapper">
@@ -346,7 +471,8 @@
                 <a class="product-item" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -370,7 +496,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -394,7 +521,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -418,7 +546,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -442,7 +571,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -466,7 +596,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -479,7 +610,7 @@
           </div>
         </div>
 
-        <div id="popular-tab-2" class="tabs-content products__content">
+        <div id="product-tab-2" class="tabs-content products__content">
           <div class="product-slider">
             <div class="product-slider__item">
               <div class="product-item__wrapper">
@@ -494,7 +625,8 @@
                 <a class="product-item" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -518,7 +650,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -542,7 +675,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -566,7 +700,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -590,7 +725,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -614,7 +750,8 @@
                 <a class="product-item product-item--sale" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
 
-                  <img class="product-item__img" src="images/content/product-1.png" alt="Водонепроницаемый Рюкзак">
+                  <img class="product-item__img" src="images/content/product-1.png"
+                       alt="Водонепроницаемый Рюкзак">
 
                   <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
 
@@ -627,14 +764,18 @@
           </div>
         </div>
 
-        <div id="popular-tab-3" class="tabs-content products__content">slider 3</div>
+        <div id="product-tab-3" class="tabs-content products__content">slider 3</div>
 
-        <div id="popular-tab-4" class="tabs-content products__content">slider 4</div>
+        <div id="product-tab-4" class="tabs-content products__content">slider 4</div>
 
-        <div id="popular-tab-5" class="tabs-content products__content">slider 5</div>
+        <div id="product-tab-5" class="tabs-content products__content">slider 5</div>
 
-        <div id="popular-tab-6" class="tabs-content products__content">slider 6</div>
+        <div id="product-tab-6" class="tabs-content products__content">slider 6</div>
       </div>
+    </div>
+
+    <div class="product__more">
+      <a class="product__more-link" href="">Показать ещё</a>
     </div>
   </div>
 </section>
